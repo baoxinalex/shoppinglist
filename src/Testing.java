@@ -54,11 +54,11 @@ public class Testing {
         //5.1 it should print out egg
         System.out.println(shoppingListApp.getIngredient("egg").getName());
         //5.2 it should print null, however it throws runtime exception since getIngredient returns null and getName cannot continue
-        System.out.println(shoppingListApp.getIngredient("sugar").getName());
+        System.out.println(shoppingListApp.getIngredient("sugar"));
 
         //6.1 it should print out 5
         System.out.println(shoppingListApp.getQuantity(egg).getValue());
         //6.2 it should print out null, however it throws runtime exception since getQuantity returns null and getValue cannot continue
-        System.out.println(shoppingListApp.getQuantity(sugar).getValue());
+        System.out.println(shoppingListApp.getQuantity(sugar));
     }
 }

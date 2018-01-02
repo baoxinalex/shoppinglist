@@ -69,10 +69,11 @@ class ShoppingListApp {
 
     Ingredient getIngredient(String name){
         for (Ingredient ingre1 : shoppingList.keySet()){
-            if ((ingre1.getName()).equals(name.toLowerCase())){
+            if ((ingre1.getName().toLowerCase()).equals(name.toLowerCase())){
                 return ingre1;
             }
         }
+
         return null;
     }
 
