@@ -26,7 +26,6 @@ class ShoppingListApp {
 
     void deductIngredient(String name, Quantity quantityToDeduct) {
         Ingredient temp = new Ingredient(name,1);
-        System.out.println(shoppingList.get(temp) instanceof DiscreteQuantity);
         if(shoppingList.containsKey(temp)){
             //condition "if(quantityToDeduct.getClass().equals(shoppingList.get(temp).getClass()))" does not work here
             // as shoppingList.get(temp) returns DiscreteQuantity$1 rather than DiscreteQuantity
